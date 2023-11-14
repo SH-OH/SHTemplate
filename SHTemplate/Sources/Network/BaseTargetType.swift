@@ -8,9 +8,9 @@
 import Foundation
 import Moya
 
-protocol BaseTargetType: TargetType {}
+public protocol BaseTargetType: TargetType {}
 
-extension BaseTargetType {
+public extension BaseTargetType {
 	
 	var validationType: ValidationType { .successAndRedirectCodes }
 	var url: URL? { URL(string: path, relativeTo: baseURL) }

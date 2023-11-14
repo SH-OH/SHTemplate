@@ -10,7 +10,7 @@ import Moya
 import RxMoya
 import RxSwift
 
-final class NetworkService<T: BaseTargetType> {
+public final class NetworkService<T: BaseTargetType> {
 	
 	private let provider: MoyaProvider<T>
 	

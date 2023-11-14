@@ -29,6 +29,13 @@
 		CBDC8DD92B01FF78003D8EFD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC8DD82B01FF78003D8EFD /* NetworkService.swift */; };
 		CBDC8DDB2B01FF7F003D8EFD /* NetworkLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC8DDA2B01FF7F003D8EFD /* NetworkLoggingPlugin.swift */; };
 		CBDC8DDD2B01FF87003D8EFD /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC8DDC2B01FF87003D8EFD /* BaseTargetType.swift */; };
+		CBE48DEC2B03235E007B9F71 /* HasKFOptionsLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE48DEB2B03235E007B9F71 /* HasKFOptionsLoadable.swift */; };
+		CBE48DEE2B032366007B9F71 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE48DED2B032366007B9F71 /* NibLoadable.swift */; };
+		CBE48DF12B03238E007B9F71 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE48DF02B03238E007B9F71 /* TestModel.swift */; };
+		CBE48DF42B0323EB007B9F71 /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE48DF32B0323EB007B9F71 /* Collection+.swift */; };
+		CBE48DF62B0323FA007B9F71 /* Observable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE48DF52B0323F9007B9F71 /* Observable+.swift */; };
+		CBE48DF82B03240C007B9F71 /* Reactive+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE48DF72B03240C007B9F71 /* Reactive+.swift */; };
+		CBE48DFA2B03243C007B9F71 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE48DF92B03243C007B9F71 /* UITableView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +73,13 @@
 		CBDC8DD82B01FF78003D8EFD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CBDC8DDA2B01FF7F003D8EFD /* NetworkLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggingPlugin.swift; sourceTree = "<group>"; };
 		CBDC8DDC2B01FF87003D8EFD /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		CBE48DEB2B03235E007B9F71 /* HasKFOptionsLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HasKFOptionsLoadable.swift; path = ../../../../../../../Documents/HasKFOptionsLoadable.swift; sourceTree = "<group>"; };
+		CBE48DED2B032366007B9F71 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = ../../../../../../../Documents/NibLoadable.swift; sourceTree = "<group>"; };
+		CBE48DF02B03238E007B9F71 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestModel.swift; path = ../../../../../../../Documents/TestModel.swift; sourceTree = "<group>"; };
+		CBE48DF32B0323EB007B9F71 /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Collection+.swift"; path = "../../../../../../../Documents/Collection+.swift"; sourceTree = "<group>"; };
+		CBE48DF52B0323F9007B9F71 /* Observable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Observable+.swift"; path = "../../../../../../../Documents/Observable+.swift"; sourceTree = "<group>"; };
+		CBE48DF72B03240C007B9F71 /* Reactive+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Reactive+.swift"; path = "../../../../../../../Documents/Reactive+.swift"; sourceTree = "<group>"; };
+		CBE48DF92B03243C007B9F71 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITableView+.swift"; path = "../../../../../../../Documents/UITableView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +189,8 @@
 		CBDC8DB22B01E702003D8EFD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CBE48DF22B0323D0007B9F71 /* Extensions */,
+				CBE48DEA2B03234F007B9F71 /* Protocols */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -208,6 +224,7 @@
 		CBDC8DB62B01E713003D8EFD /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				CBE48DEF2B032383007B9F71 /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -215,7 +232,6 @@
 		CBDC8DB72B01E716003D8EFD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				CBDC8DBA2B01E73B003D8EFD /* Common */,
 				CBDC8DB92B01E724003D8EFD /* Main */,
 			);
 			path = Presentation;
@@ -238,19 +254,40 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		CBDC8DBA2B01E73B003D8EFD /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		CBDC8DDE2B01FF91003D8EFD /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
 				CBDC8DDA2B01FF7F003D8EFD /* NetworkLoggingPlugin.swift */,
 			);
 			path = Plugins;
+			sourceTree = "<group>";
+		};
+		CBE48DEA2B03234F007B9F71 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CBE48DEB2B03235E007B9F71 /* HasKFOptionsLoadable.swift */,
+				CBE48DED2B032366007B9F71 /* NibLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CBE48DEF2B032383007B9F71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBE48DF02B03238E007B9F71 /* TestModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBE48DF22B0323D0007B9F71 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBE48DF32B0323EB007B9F71 /* Collection+.swift */,
+				CBE48DF52B0323F9007B9F71 /* Observable+.swift */,
+				CBE48DF72B03240C007B9F71 /* Reactive+.swift */,
+				CBE48DF92B03243C007B9F71 /* UITableView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,11 +443,18 @@
 				CBDC8D852B01E5AF003D8EFD /* ViewController.swift in Sources */,
 				CBDC8D812B01E5AF003D8EFD /* AppDelegate.swift in Sources */,
 				CBDC8D832B01E5AF003D8EFD /* SceneDelegate.swift in Sources */,
+				CBE48DFA2B03243C007B9F71 /* UITableView+.swift in Sources */,
+				CBE48DF62B0323FA007B9F71 /* Observable+.swift in Sources */,
+				CBE48DF82B03240C007B9F71 /* Reactive+.swift in Sources */,
+				CBE48DF12B03238E007B9F71 /* TestModel.swift in Sources */,
+				CBE48DEE2B032366007B9F71 /* NibLoadable.swift in Sources */,
 				CBDC8DDD2B01FF87003D8EFD /* BaseTargetType.swift in Sources */,
 				CBDC8DD52B01E836003D8EFD /* RealmServiceImpl.swift in Sources */,
 				CBDC8DDB2B01FF7F003D8EFD /* NetworkLoggingPlugin.swift in Sources */,
+				CBE48DEC2B03235E007B9F71 /* HasKFOptionsLoadable.swift in Sources */,
 				CBDC8DD92B01FF78003D8EFD /* NetworkService.swift in Sources */,
 				CBDC8DD72B01E84E003D8EFD /* RealmService.swift in Sources */,
+				CBE48DF42B0323EB007B9F71 /* Collection+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

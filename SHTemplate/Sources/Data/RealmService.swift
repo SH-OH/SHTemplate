@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RealmSwift
 
-protocol RealmService {
+public protocol RealmService {
 	
 	// 모든 아이템 검색하기.
 	func findAll<O: Object>() -> Single<[O]>

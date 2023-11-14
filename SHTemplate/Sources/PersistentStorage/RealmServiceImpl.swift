@@ -111,8 +111,6 @@ final class RealmServiceImpl: RealmService {
 				realm.object(ofType: O.self, forPrimaryKey: $0)
 			})
 			
-			let test = objects
-			
 			realm.writeAsync({
 				realm.delete(objects)
 			}, onComplete: { error in
